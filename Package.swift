@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "XLPagerTabStrip",
-    // platforms: [.iOS("9.3")],
+    platforms: [.iOS("13.0")],
     products: [
         .library(name: "XLPagerTabStrip", targets: ["XLPagerTabStrip"])
     ],
