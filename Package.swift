@@ -4,28 +4,15 @@ import PackageDescription
 
 let package = Package(
     name: "XLPagerTabStrip",
-    platforms: [
-        .iOS(.v9)
-    ],
+    // platforms: [.iOS("9.3")],
     products: [
-        .library(
-            name: "XLPagerTabStrip",
-            targets: ["XLPagerTabStrip"]
-        )
+        .library(name: "XLPagerTabStrip", targets: ["XLPagerTabStrip"])
     ],
     targets: [
         .target(
             name: "XLPagerTabStrip",
             path: "Sources",
-            exclude: [
-                "FXPageControl.h",
-                "FXPageControl.m"
-            ]
-        ),
-        .testTarget(
-            name: "XLPagerTabStripTests",
-            dependencies: ["XLPagerTabStrip"],
-            path: "Tests"
+            exclude: ["FXPageControl.h", "FXPageControl.m"]
         )
     ]
 )
